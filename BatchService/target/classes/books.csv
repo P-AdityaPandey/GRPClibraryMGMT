@@ -1,0 +1,7 @@
+
+id,title,author,isbn,available
+1,Clean Code,Robert C. Martin,9780132350884,true
+2,Effective Java,Joshua Bloch,9780134685991,true
+3,Head First Java,Kathy Sierra and Bert Bates,9780596009205,false
+4,Spring in Action,Craig Walls,9781617297571,true
+5,Java: The Complete Reference,Herbert Schildt,9781260440232,true

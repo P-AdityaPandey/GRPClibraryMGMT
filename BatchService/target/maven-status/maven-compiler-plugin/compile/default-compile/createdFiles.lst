@@ -1,0 +1,5 @@
+com\example\batchservice\config\BatchJobConfig.class
+com\example\batchservice\dto\BookRecord.class
+com\example\batchservice\controller\BatchController.class
+com\example\batchservice\entity\BookEntity.class
+com\example\batchservice\BatchServiceApplication.class

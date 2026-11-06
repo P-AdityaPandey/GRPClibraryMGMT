@@ -1,17 +1,7 @@
-server.port=8082
-spring.application.name=batch-service
 
-spring.datasource.url=jdbc:h2:mem:batchdb;MODE=LEGACY;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
-spring.datasource.driver-class-name=org.h2.Driver
-spring.datasource.username=sa
-spring.datasource.password=
-
-spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
-spring.jpa.hibernate.ddl-auto=create-drop
-spring.jpa.show-sql=false
-
-spring.h2.console.enabled=true
-spring.h2.console.path=/h2-console
-
-spring.batch.jdbc.initialize-schema=always
-spring.batch.job.enabled=false
+id,title,author,isbn,available
+1,Clean Code,Robert C. Martin,9780132350884,true
+2,Effective Java,Joshua Bloch,9780134685991,true
+3,Head First Java,Kathy Sierra and Bert Bates,9780596009205,false
+4,Spring in Action,Craig Walls,9781617297571,true
+5,Java: The Complete Reference,Herbert Schildt,9781260440232,true

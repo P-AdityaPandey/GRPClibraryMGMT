@@ -1,6 +1,62 @@
-id,title,author,isbn,available
-1,Clean Code,Robert C. Martin,9780132350884,true
-2,Effective Java,Joshua Bloch,9780134685991,true
-3,Head First Java,Kathy Sierra and Bert Bates,9780596009205,false
-4,Spring in Action,Craig Walls,9781617297571,true
-5,Java: The Complete Reference,Herbert Schildt,9781260440232,true
+
+package com.example.batchservice.entity;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name = "book_record")
+public class BookEntity {
+
+    @Id
+    private Integer id;
+
+    private String title;
+    private String author;
+    private String isbn;
+    private boolean available;
+
+    public BookEntity() {
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getAuthor() {
+        return author;
+    }
+
+    public void setAuthor(String author) {
+        this.author = author;
+    }
+
+    public String getIsbn() {
+        return isbn;
+    }
+
+    public void setIsbn(String isbn) {
+        this.isbn = isbn;
+    }
+
+    public boolean isAvailable() {
+        return available;
+    }
+
+    public void setAvailable(boolean available) {
+        this.available = available;
+    }
+}
